@@ -1,6 +1,9 @@
 :root {
+    --animation-duration: 300ms;
     --main-outer-bgcolor: #fff;
+    --main-offcolor: red;
 }
 
-
-$mainOuterBgcolor: var(--main-outer-bgcolor)
+$animationDuration: var(--animation-duration);
+$mainOuterBgcolor: var(--main-outer-bgcolor);
+$mainOffColor: var(--main-offcolor);

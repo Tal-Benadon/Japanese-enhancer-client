@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import Root from './routes/root';
+import Root from './routes/root/root';
 import './index.scss'
 import {
   createBrowserRouter,

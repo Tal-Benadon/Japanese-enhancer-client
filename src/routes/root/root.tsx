@@ -4,11 +4,12 @@ import { ANIMATION_DURATION } from '../../helpers/constants'
 const menuPlaceHolders: string[] = ["Home", "About", "Services", "Contact"]
 
 export default function Root() {
+
     const [clickedIndex, setClickedIndex] = useState<number | null>(null)
     const [previousIndex, setPreviousIndex] = useState<number | null>(null)
     const [isClosingTab, setIsClosingTab] = useState<number | null>(null)
 
-    const handleOnClick = (index: number) => {
+    const handleOnClick = (index: number): void => {
         if (clickedIndex === index) {
             setClickedIndex(null)
             setIsClosingTab(index)
@@ -23,12 +24,6 @@ export default function Root() {
             setClickedIndex(index)
         }
     }
-
-
-
-
-
-
 
     return (
 

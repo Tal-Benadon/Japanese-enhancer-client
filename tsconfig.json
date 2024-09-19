@@ -1,7 +1,60 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+  // "files": [],
+  // "references": [
+  //   {
+  //     "path": "./tsconfig.app.json"
+  //   },
+  //   {
+  //     "path": "./tsconfig.node.json"
+  //   }
+  // ],
+  "compilerOptions": {
+    "target": "ESNext", // Use the latest ECMAScript features
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ], // Use browser and ESNext features
+    "allowJs": false, // Disallow JavaScript files
+    "skipLibCheck": true, // Skip type checks on library files
+    "esModuleInterop": true, // Allows default imports from CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow default imports for modules that lack them
+    "strict": true, // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "noFallthroughCasesInSwitch": true, // Disallow fallthrough cases in switch statements
+    "module": "ESNext", // Use ESNext module system
+    "moduleResolution": "Node", // Resolve modules like Node.js
+    "resolveJsonModule": true, // Enable importing JSON modules
+    "isolatedModules": true, // Ensure that each file can be transpiled without global type information
+    "jsx": "react-jsx", // Use the new JSX transform (React 17+)
+    "noImplicitAny": true, // Disallow implicit 'any' types
+    "noUnusedLocals": true, // Error on unused local variables
+    "noUnusedParameters": true, // Error on unused function parameters
+    "noImplicitReturns": true, // Ensure all functions have return statements
+    "noImplicitThis": true, // Disallow 'this' expressions with an implicit 'any' type
+    "strictNullChecks": true, // Ensure nullable types are handled properly
+    "strictFunctionTypes": true, // Strict checking of function types
+    "strictBindCallApply": true, // Check binding/calling/applying method arguments
+    "strictPropertyInitialization": true, // Ensure properties are initialized correctly
+    "exactOptionalPropertyTypes": true, // Ensure optional properties are only accessed if defined
+    "noUncheckedIndexedAccess": true, // Require that indexed access is checked for undefined
+    "paths": {
+      "@/": [
+        "./src/"
+      ]
+      // "@components/*": [
+      //   "src/components/*"
+      // ], // Path aliasing for cleaner imports
+      // "@utils/*": [
+      //   "src/utils/*"
+      // ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
   ]
 }

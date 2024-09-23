@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client'
 import './index.scss'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from './routes/Login';
-import About from './routes/About';
+import Login from './pages/Login';
+import About from './pages/About';
 
 
 

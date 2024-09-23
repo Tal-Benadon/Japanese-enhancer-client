@@ -1,25 +1,23 @@
 import { createRoot } from 'react-dom/client'
-import Root from './routes/root/root';
 import './index.scss'
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from './routes/Login';
+import About from './routes/About';
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />
+    element: <>root</>
   },
   {
     path: "/login",
-    element: <>Login</>
+    element: <Login />
   },
   {
     path: "/about",
-    element: <>About</>
+    element: <About />
   }
 ])
 

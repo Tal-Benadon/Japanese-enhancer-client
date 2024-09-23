@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import { ANIMATION_DURATION } from '../../helpers/constants'
 const menuPlaceHolders: string[] = ["Home", "About", "Services", "Contact"]
 
-export default function Root() {
+export default function Menu() {
 
     const [clickedIndex, setClickedIndex] = useState<number | null>(null)
     const [previousIndex, setPreviousIndex] = useState<number | null>(null)
